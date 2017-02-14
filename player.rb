@@ -2,9 +2,9 @@ module MathGame
   class Player
     attr_reader :lives, :title
 
-    def initialize(n)
+    def initialize(title)
       @lives = 3
-      @title = 'Player ' << n.to_s
+      @title = title
     end
 
     def lose_a_life
