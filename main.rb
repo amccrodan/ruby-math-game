@@ -5,7 +5,6 @@ module MathGame
     require './question'
 
     game1 = Game.new(Player.new("Player 1"), Player.new("Player 2"))
-    game_over = false
 
     until game1.over? do
       puts "------- NEW TURN -------"
