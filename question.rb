@@ -7,9 +7,8 @@ module MathGame
       @num2 = rand(1..20)
     end
 
-    def check_question
-      answer = gets.chomp.to_i
-      answer == @num1 + @num2
+    def check_question(answer)
+      answer.to_i == @num1 + @num2
     end
 
   end
