@@ -17,5 +17,9 @@ module MathGame
       [@player1.lives, @player2.lives]
     end
 
+    def over?
+      @player1.lives == 0 || @player2.lives == 0
+    end
+
   end
 end
